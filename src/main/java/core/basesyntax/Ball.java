@@ -1,8 +1,8 @@
 package core.basesyntax;
 
 public class Ball {
-    Colors color;
-    int number;
+    private Colors color;
+    private int number;
 
     public Ball (Colors color, int number) {
         this.color = color;
@@ -11,6 +11,6 @@ public class Ball {
 
     @Override
     public String toString () {
-        return "Ball [color=" + color + ", number=" + number + "]";
+        return  "Ball [color=" + color.name() + ", number=" + number + "]";
     }
 }
